@@ -9,7 +9,7 @@ import java.util.*
 class Main5 {
     fun solution(str:String) : String {
         var answer = ""
-        var sArr = str.toCharArray()
+        val sArr = str.toCharArray()
         var lt = 0
         var rt = sArr.size-1
 
@@ -17,14 +17,14 @@ class Main5 {
             if(!(sArr[lt].isLowerCase() || sArr[lt].isUpperCase())) lt++
             else if(!(sArr[rt].isLowerCase() || sArr[rt].isUpperCase())) rt--
             else {
-                var temp = sArr[lt]
+                val temp = sArr[lt]
                 sArr[lt] = sArr[rt]
                 sArr[rt] = temp
                 lt ++
                 rt --
             }
         }
-        answer = sArr.joinToString("")
+        answer = String(sArr) //joinToString
         return answer
     }
 }

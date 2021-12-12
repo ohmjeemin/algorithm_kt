@@ -24,7 +24,7 @@ fun main(){
     val main = Main4()
     val sc = Scanner(System.`in`)
     val n = sc.nextInt()
-    val strArr = Array(n, {""}) // size정한 빈배열 만들기
+    val strArr = Array(n) { "" } // size정한 빈배열 만들기
 
     for(i in 0 until n) { // until쓰면 0부터 n-1까지
         strArr[i] = sc.next()

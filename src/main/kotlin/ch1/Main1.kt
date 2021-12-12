@@ -8,7 +8,7 @@ class Main1 {
         val paramStr = str.uppercase()
         val paramChar = t.uppercase()
 
-        for(x in paramStr.toCharArray()) {
+        for(x in paramStr) {
             if("$x"==paramChar) answer ++;
         }
         return answer;

@@ -25,5 +25,5 @@ fun main(){
     val main = Main3()
     val sc = Scanner(System.`in`)
     val str = sc.nextLine()
-    System.out.println(main.solution(str))
+    println(main.solution(str))
 }
