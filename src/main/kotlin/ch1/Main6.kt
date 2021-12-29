@@ -7,11 +7,8 @@ import java.util.*
 * 중복이 제거된 문자열의 각 문자는 원래 문자열의 순서를 유지합니다.
 * */
 class Main6 {
-    fun solution(str:String) : String {
-        var answer = ""
-        str.forEachIndexed { idx, next -> if(str.indexOf(str[idx])==idx) answer += next }
-        return answer
-    }
+    fun solution(str:String) : String =
+        str.foldIndexed(""){ idx, total, next -> if(str.indexOf(str[idx])==idx) total + next else total}
 }
 
 fun main(){
